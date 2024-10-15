@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "resources/js/app.jsx", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "public/index.html" }
+    ]
+  }
+  
