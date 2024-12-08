@@ -6,8 +6,8 @@ const Hero = () => {
     <section id="home"
      className={`${styles.paddingY} justify-center items-center mt-10 gap-x-6 `}>
         <div className={`text-center flex-1 flex-col xl:px-0 sm:px-16 px-6`}>
-        <h1 className=" text-balance text-4xl font-semibold tracking-tight text-white sm:text-6xl">
-        Your Chama Activities, <span className="text-gradient">Simplified</span></h1>
+        <h1 className=" text-balance text-4xl font-semibold tracking-tight text-primary sm:text-6xl">
+        Your Chama Activities, <span className="text-blueGreen">Simplified</span></h1>
        
 
     <p className= {`${styles.paragraph}max-w-[470px] mt-5`}>

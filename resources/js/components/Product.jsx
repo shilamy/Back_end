@@ -11,11 +11,11 @@ const Product = () => (
   </div>
 
   <div className={layout.sectionInfo}>
-    <h2 className={styles.heading2}>
+    <h2 className={`text-5xl ${styles.heading2}`}>
       Easily control your <br className="sm:block hidden" /> Finances &
       Assets.
     </h2>
-    <p className={`${styles.paragraph} max-w-[470px] mt-6`}>
+    <p className={`${styles.paragraph} text-seaGreen max-w-[470px] mt-6`}>
     Analytics Dashboard,Provides a summary of individual financial performance, group savings, and loan distribution.
     </p>
     </div>

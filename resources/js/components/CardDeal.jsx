@@ -6,13 +6,13 @@ import CustomButton from "./CustomButton";
 const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
+      <h2 className={`text-4xl ${styles.heading2}`}>
         The best Chama System <br className="sm:block hidden" /> and easy
         to use.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       A Digitalized System that provide coordination, transparency and efficiency in enabling streamlined operations within groups. </p>
-
+      <br/>
       <CustomButton/>
     </div>
 

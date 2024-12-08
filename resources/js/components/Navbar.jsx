@@ -11,11 +11,11 @@ const [toggle, setToggle] = useState(false);
     <>
   
     <nav className="w-full flex py-6 justify-between items-center shadow-lg navbar">
-      <h1 className="font-poppins font-semibold text-white w-[124px] h-[32px]"> KR-WALLET</h1>
+      <h1 className="font-poppins font-semibold text-sand w-[124px] h-[32px]"> KR-WALLET</h1>
       <ul className="list-none  sm:flex hidden justify-end items-center flex-2">
       {navLinks.map((nav,index) =>(
         <li key={nav.id}
-        className={`font-roboto font-normal cursor-pointer text-[16px] text-white 
+        className={`font-roboto font-normal cursor-pointer text-[16px] text-sand
         ${index === navLinks.length -0 ? "mr-0":"mr-10"}`}>
          <a href={`#${nav.id}`}>{nav.title}</a>
         </li>
@@ -23,12 +23,12 @@ const [toggle, setToggle] = useState(false);
       ))}
       <div className='flex gap-4'>
       <a href={"login"}>
-        <button type='button' className='px-4 py-2  text-black bg-lime-300 rounded-lg'>
-         Login
+        <button type='button' className='px-4 py-2  text-white bg-sand rounded-[10px] outline-none'>
+        Log In
         </button>
         </a>
         <a href={"register"}>
-        <button type='button' className='px-4 py-2  text-black bg-orange-300 rounded-lg'>
+        <button type='button' className='px-4 py-2  text-white bg-blueGreen rounded-[10px] outline-none'>
          Join Us
         </button>
         </a>
@@ -42,8 +42,8 @@ const [toggle, setToggle] = useState(false);
    />
 <div
     className= {`${toggle ? 'flex' :  'hidden'}
-    p-6 bg-black-gradient absolute top-20 right-0 
-    mx-4 my-2 min-w-[140px] rounded-xl sidebar`} 
+    p-6 bg-primary absolute top-20 right-0 
+    mx-4 my-2 min-w-[140px] rounded-[20px] box-shadow sidebar`} 
    >
 
 <ul className="list-none flex flex-col justify-end items-center flex-1">  
@@ -59,14 +59,17 @@ const [toggle, setToggle] = useState(false);
       </li>
 
     ))} 
+    <br/>
     <div>
     <a href={"login"}>
-      <button type='button' className='px-6 py-2 text-black bg-lime-300 rounded-[10px] outline-none'>
-      Login
-      </button>
-      </a>
-      <a href={"register"}>
-        <button type='button' className='px-4 py-2  text-black bg-orange-300 rounded-lg'>
+        <button type='button' className='px-4 py-2  text-white bg-sand rounded-[10px] outline-none'>
+         Log In
+        </button>
+        </a>
+        <br/>
+        <br/>
+        <a href={"register"}>
+        <button type='button' className='px-4 py-2  text-white bg-blueGreen rounded-[10px] outline-none'>
          Join Us
         </button>
         </a>

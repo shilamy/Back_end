@@ -10,6 +10,24 @@ import CardDeal from "./CardDeal";
 import Team from "./Team";
 import TryIt from "./TryIt";
 import Footer from "./Footer";
+import Dropdown from "./Dropdown";
+import InputError from "./InputError";
+import InputLabel from "./InputLabel";
+import Modal from "./Modal";
+import  NavLink from "./NavLink";   
+import  PrimaryButton from "./PrimaryButton";
+import  SecondaryButton from "./SecondaryButton";
+import ResponsiveNavLink from "./ResponsiveNavLink"; 
+import TextInput from "./TextInput";  
+import  ApplicationLogo from "./ApplicationLogo"; 
+import Checkbox from "./Checkbox";   
+import  DangerButton from "./DangerButton";
+import GuestLayout from "../Layouts/GuestLayout";
+import AuthenticatedLayout from "../Layouts/AuthenticatedLayout";
+    
+  
+
+
 
 export{
     Navbar,
@@ -23,6 +41,20 @@ export{
     CardDeal,
     Team,
     TryIt,
-    Footer
+    Footer,
+    Dropdown,
+    InputError,
+    InputLabel,
+    Modal,
+    NavLink,
+    PrimaryButton,
+    SecondaryButton,
+    ResponsiveNavLink,
+    TextInput,
+    ApplicationLogo,
+    Checkbox,
+    DangerButton,
+    GuestLayout,
+    AuthenticatedLayout,
 
 }
