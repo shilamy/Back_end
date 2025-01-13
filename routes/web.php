@@ -8,8 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use Inertia\Inertia;
 
-// If you want to use Auth routes, ensure this is intentional and only needed
-Auth::routes(['verify' => true]);
+
 
 Route::get('/', function () {
     return Inertia::render('Home', [
@@ -21,8 +20,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('admin')->group(function () { 
-    Route::get('/dashboard', [DashboardController::class, 'dashboard'])
-        ->middleware(['auth', 'verified'])
+    Route::get('dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
 
     Route::middleware('auth')->group(function () {

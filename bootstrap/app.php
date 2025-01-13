@@ -15,6 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
      // Global Middleware
      $middleware->append(HandleInertiaRequests::class);
      $middleware->append(\Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets::class);
+     $middleware->append(\App\Http\Middleware\EnsureUserIsAdmin::class);
 
        })
     ->withExceptions(function (Exceptions $exceptions) {
