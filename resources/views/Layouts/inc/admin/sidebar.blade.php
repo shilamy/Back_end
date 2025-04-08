@@ -1,14 +1,14 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
-          <i class="mdi mdi-home menu-icon"></i>
+        <a class="nav-link" href="#">
+          <i class="mdi mdi-view-dashboard menu-icon"></i>
           <span class="menu-title">Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-          <i class="mdi mdi-circle-outline menu-icon"></i>
+          <i class="mdi mdi mdi-credit-card menu-icon"></i>
           <span class="menu-title">Contributions</span>
           <i class="menu-arrow"></i>
         </a>
@@ -52,7 +52,7 @@
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#savings-menu" aria-expanded="false" aria-controls="savings-menu">
           <div>
-            <i class="mdi mdi-apps menu-icon"></i>
+            <i class="mdi mdi-coin menu-icon"></i>
             <span class="menu-title">Savings</span>
           </div>
           <i class="menu-arrow"></i>
@@ -72,7 +72,7 @@
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#investments-menu" aria-expanded="false" aria-controls="investments-menu">
           <div>
-            <i class="mdi mdi-apps menu-icon"></i>
+            <i class="mdi mdi-chart-line menu-icon"></i>
             <span class="menu-title">Investments</span>
           </div>
           <i class="menu-arrow"></i>

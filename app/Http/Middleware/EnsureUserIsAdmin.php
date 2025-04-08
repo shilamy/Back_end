@@ -9,14 +9,18 @@ use Illuminate\Support\Facades\Auth;
 
 class EnsureUserIsAdmin
 {
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
-     */
     public function handle(Request $request, Closure $next): Response
     {
-        
-      
+        // If not authenticated, redirect to login
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('error', 'Please login first');
+        }
+
+        // If not admin (role_as !== 1), redirect home with error
+        if (Auth::user()->role_as !== 1) {
+            return redirect('/')->with('error', 'Access Denied. Administrator privileges required.');
+        }
+
         return $next($request);
-    }}
+    }
+}

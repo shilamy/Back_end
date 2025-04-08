@@ -28,8 +28,8 @@
 
 
 </head>
-<body>
   <body>
+
 
     <div class="container-scroller">
         @include('layouts.inc.admin.navbar')
@@ -41,6 +41,11 @@
                     @yield('content')
                 </div>
             </div>
+            
+    </div>
+    <div>
+      @include('layouts.inc.admin.footer')
+    </div>
     </div>
 
 

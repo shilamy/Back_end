@@ -24,6 +24,8 @@ class AuthenticatedSessionController extends Controller
         ]);
     }
 
+    
+
     /**
      * Handle an incoming authentication request.
      */
@@ -33,7 +35,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        return redirect()->intended(
+            Auth::user()->role_as === 1 ? route('admin.dashboard') : route('dashboard'));
     }
 
     /**

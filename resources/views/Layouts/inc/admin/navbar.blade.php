@@ -1,11 +1,9 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="navbar-brand-wrapper d-flex justify-content-center">
       <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-        <a class="navbar-brand brand-logo" href="index.html">
-            {{--<img src="images/logo.svg" alt="logo"/>--}}
-            <h1>KR_WALLET</h1>
+        <a class="navbar-brand brand-logo" href="#">
+            <h6 className="font-poppins font-semibold w-[24px] h-[24px]"> INKROAD </h6>
         </a>
-        <a class="" href="index.html"><img src="" alt=""/></a>
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-sort-variant"></span>
         </button>
